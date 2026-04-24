@@ -43,11 +43,11 @@ int ler_sensor_raw(adc_channel_t canal) {
 //calibração
 int raw_para_cm(int raw){
     if (raw<100) return 999;
-    float tensao = raw * (3.1f / 4095.0f);
+    float tensao = raw * (5.0f / 4095.0f);
     float cm = 13.0f * pow(tensao, -1.0f);
 	
     if (cm < 4.0f)  cm = 4.0f;
-    if (cm > 30.0f) cm = 30.0f;
+    // if (cm > 30.0f) cm = 30.0f;
 	
     return (int)cm;
 }
