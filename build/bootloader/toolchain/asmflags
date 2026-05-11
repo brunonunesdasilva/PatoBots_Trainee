@@ -1,4 +1,4 @@
--specs=picolibc.specs
+"-specs=C:/Users/brun0/workspace/sumo_treinee/build/bootloader/specs/picolibc.specs"
 -Wno-frame-address
 -mlongcalls
 -fno-builtin-memcpy

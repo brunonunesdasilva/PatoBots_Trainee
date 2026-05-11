@@ -58,6 +58,7 @@ $<TARGET_FILE:__idf_esp_adc>
 $<TARGET_FILE:__idf_esp_driver_i2s>
 $<TARGET_FILE:__idf_esp_hal_i2c>
 $<TARGET_FILE:__idf_esp_hal_touch_sens>
+$<TARGET_FILE:__idf_esp_hal_pmu>
 $<TARGET_FILE:__idf_esp_http_client>
 $<TARGET_FILE:__idf_esp_event>
 $<TARGET_FILE:__idf_tcp_transport>
@@ -69,6 +70,8 @@ $<TARGET_FILE:__idf_esp_phy>
 $<TARGET_FILE:__idf_esp_netif>
 $<TARGET_FILE:__idf_wpa_supplicant>
 $<TARGET_FILE:__idf_esp_coex>
+$<TARGET_FILE:coexist>
+$<TARGET_FILE:bt_btdm_app>
 $<TARGET_FILE:esp_wifi_core>
 $<TARGET_FILE:esp_wifi_espnow>
 $<TARGET_FILE:esp_wifi_mesh>
@@ -107,6 +110,7 @@ $<TARGET_FILE:idf::log>
 $<TARGET_FILE:idf::heap>
 $<TARGET_FILE:idf::soc>
 $<TARGET_FILE:idf::esp_hal_gpio>
+$<TARGET_FILE:idf::esp_hal_pmu>
 $<TARGET_FILE:idf::esp_hal_touch_sens>
 $<TARGET_FILE:idf::esp_hw_support>
 $<TARGET_FILE:idf::freertos>
@@ -129,6 +133,8 @@ $<TARGET_FILE:idf::esp_coex>
 $<TARGET_FILE:idf::esp_wifi>
 $<TARGET_FILE:idf::esp_driver_spi>
 $<TARGET_FILE:idf::esp_gdbstub>
+$<TARGET_FILE:idf::bt>
+$<TARGET_FILE:__idf_esp_driver_spi>
 $<TARGET_FILE:idf::unity>
 $<TARGET_FILE:idf::cmock>
 $<TARGET_FILE:__idf_unity>
@@ -141,6 +147,7 @@ $<TARGET_FILE:idf::http_parser>
 $<TARGET_FILE:idf::esp-tls>
 $<TARGET_FILE:idf::esp_driver_i2s>
 $<TARGET_FILE:idf::esp_adc>
+$<TARGET_FILE:idf::esp_blockdev_util>
 $<TARGET_FILE:idf::esp_driver_cam>
 $<TARGET_FILE:idf::esp_driver_dac>
 $<TARGET_FILE:idf::esp_driver_i2c>
@@ -156,7 +163,9 @@ $<TARGET_FILE:__idf_esp_hal_pcnt>
 $<TARGET_FILE:idf::esp_hal_rmt>
 $<TARGET_FILE:idf::esp_driver_rmt>
 $<TARGET_FILE:__idf_esp_hal_rmt>
+$<TARGET_FILE:idf::esp_hal_sd>
 $<TARGET_FILE:idf::sdmmc>
+$<TARGET_FILE:__idf_esp_hal_sd>
 $<TARGET_FILE:idf::esp_driver_sd_intf>
 $<TARGET_FILE:__idf_sdmmc>
 $<TARGET_FILE:idf::esp_driver_sdio>
@@ -164,12 +173,12 @@ $<TARGET_FILE:idf::esp_driver_sdm>
 $<TARGET_FILE:idf::esp_driver_sdmmc>
 $<TARGET_FILE:__idf_esp_driver_sd_intf>
 $<TARGET_FILE:idf::esp_driver_sdspi>
-$<TARGET_FILE:__idf_esp_driver_spi>
 $<TARGET_FILE:idf::esp_driver_touch_sens>
 $<TARGET_FILE:idf::esp_driver_twai>
 $<TARGET_FILE:idf::esp_eth>
 $<TARGET_FILE:idf::esp_hal_lcd>
 $<TARGET_FILE:idf::esp_hid>
+$<TARGET_FILE:__idf_bt>
 $<TARGET_FILE:idf::tcp_transport>
 $<TARGET_FILE:idf::esp_http_client>
 $<TARGET_FILE:idf::esp_http_server>
@@ -193,4 +202,15 @@ $<TARGET_FILE:__idf_esp_driver_sdspi>
 $<TARGET_FILE:idf::perfmon>
 $<TARGET_FILE:idf::rt>
 $<TARGET_FILE:idf::spiffs>
+$<TARGET_FILE:idf::btstack>
+$<TARGET_FILE:__idf_driver>
+$<TARGET_FILE:idf::cmd_system>
+$<TARGET_FILE:idf::cmd_nvs>
+$<TARGET_FILE:idf::bluepad32>
+$<TARGET_FILE:__idf_btstack>
+$<TARGET_FILE:__idf_esp_driver_ledc>
+$<TARGET_FILE:__idf_esp_driver_gptimer>
+$<TARGET_FILE:__idf_cmd_system>
+$<TARGET_FILE:__idf_cmd_nvs>
 $<TARGET_FILE:idf::main>
+$<TARGET_FILE:__idf_bluepad32>

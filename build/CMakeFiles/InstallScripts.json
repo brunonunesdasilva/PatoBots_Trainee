@@ -99,6 +99,7 @@
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp-tls/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_driver_i2s/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_adc/cmake_install.cmake",
+		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_blockdev_util/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_hal_ana_cmpr/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_driver_ana_cmpr/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_driver_bitscrambler/cmake_install.cmake",
@@ -122,6 +123,7 @@
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_driver_ppa/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_hal_rmt/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_driver_rmt/cmake_install.cmake",
+		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_hal_sd/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/sdmmc/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_driver_sd_intf/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/esp_driver_sdio/cmake_install.cmake",
@@ -155,6 +157,10 @@
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/rt/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/spiffs/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/ulp/cmake_install.cmake",
+		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/btstack/cmake_install.cmake",
+		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/cmd_system/cmake_install.cmake",
+		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/cmd_nvs/cmake_install.cmake",
+		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/bluepad32/cmake_install.cmake",
 		"C:/Users/brun0/workspace/sumo_treinee/build/esp-idf/main/cmake_install.cmake"
 	],
 	"Parallel" : false

@@ -34,11 +34,9 @@ C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_gpio/CMak
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_gpio/CMakeFiles/rebuild_cache.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_usb/CMakeFiles/edit_cache.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_usb/CMakeFiles/rebuild_cache.dir
+C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_pmu/CMakeFiles/__idf_esp_hal_pmu.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_pmu/CMakeFiles/edit_cache.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_pmu/CMakeFiles/rebuild_cache.dir
-C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir
-C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/micro-ecc/CMakeFiles/edit_cache.dir
-C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/micro-ecc/CMakeFiles/rebuild_cache.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_dma/CMakeFiles/edit_cache.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_dma/CMakeFiles/rebuild_cache.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir
@@ -63,6 +61,9 @@ C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/partition_table/C
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/partition_table/CMakeFiles/rebuild_cache.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esptool_py/CMakeFiles/edit_cache.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esptool_py/CMakeFiles/rebuild_cache.dir
+C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir
+C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/micro-ecc/CMakeFiles/edit_cache.dir
+C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/micro-ecc/CMakeFiles/rebuild_cache.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_timg/CMakeFiles/__idf_esp_hal_timg.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_timg/CMakeFiles/edit_cache.dir
 C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_timg/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,4 @@
-# Install script for directory: C:/esp/v6.0/esp-idf
+# Install script for directory: C:/esp/v6.0.1/esp-idf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -74,11 +74,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esp_hal_dma/cmake_install.cmake")
 endif()
 
@@ -125,6 +120,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/esptool_py/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/brun0/workspace/sumo_treinee/build/bootloader/esp-idf/micro-ecc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

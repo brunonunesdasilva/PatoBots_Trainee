@@ -23,7 +23,7 @@
 
  * Automatically generated file. DO NOT EDIT.
 
- * Espressif IoT Development Framework (ESP-IDF) 6.0.0 Configuration Header
+ * Espressif IoT Development Framework (ESP-IDF) 6.0.1 Configuration Header
 
  */
        
@@ -71,8 +71,8 @@ MEMORY
      in heap at runtime. However due to static ROM memory usage at this 176KB mark, the
      additional static memory temporarily cannot be used.
   */
-  dram0_0_seg (RW) : org = 0x3FFB0000 + 0,
-                                     len = 0x2c200 - 0
+  dram0_0_seg (RW) : org = 0x3FFB0000 + 0xdb5c,
+                                     len = 0x2c200 - 0xdb5c
   /* Flash mapped constant data */
   drom0_0_seg (R) : org = 0x3F400020, len = 0x400000-0x20
   /* (See iram0_2_seg for meaning of 0x20 offset in the above.) */
@@ -160,7 +160,6 @@ _heap_start = _heap_low_start;
 _sram1_iram_start = 0x400A0000;
 _sram1_iram_len = ( _iram_end > _sram1_iram_start) ? (_iram_end - _sram1_iram_start) : 0;
 _heap_end = ALIGN(0x40000000 - _sram1_iram_len - 3, 4);
-_data_seg_org = ORIGIN(rtc_data_seg);
 /* The lines below define location alias for .rtc.data section based on Kconfig option.
    When the option is not defined then use slow memory segment
    else the data will be placed in fast memory segment */

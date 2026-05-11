@@ -1,4 +1,4 @@
-# Install script for directory: C:/esp/v6.0/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/src
+# Install script for directory: C:/esp/v6.0.1/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
