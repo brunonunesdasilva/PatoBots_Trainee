@@ -5,6 +5,8 @@
 #include <uni.h>
 #include "bt_control.h"
 #include "robot_states.h"
+#include "robot_task.h"
+#include "motor.h"
 #include "config.h"
 
 typedef struct my_platform_instance_s {
@@ -66,13 +68,8 @@ static void my_platform_on_controller_data(uni_hid_device_t* d, uni_controller_t
     motor_config_t* motor_dir = get_motor_direito();
     motor_config_t* motor_esq = get_motor_esquerdo();
 
-    // Aceleração (throttle right trigger)
     int aceleracao = gp->throttle;
-
-    // Freio
     int freio = -(gp->brake);
-
-    // Direção (analog left X axis)
     int direcao = gp->axis_x;
 
     // Normaliza e aplica zona morta

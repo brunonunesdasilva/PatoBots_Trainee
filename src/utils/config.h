@@ -59,6 +59,7 @@
 #define IR_BTN_2        0x46    // [2] → Estratégia: avançar direto
 #define IR_BTN_3        0x47    // [3] → Estratégia: percorrer borda
 #define IR_BTN_4        0x44    // [4] → Modo RC via controle
+#define IR_BTN_STAR     0x16 	// [*] Emergência — para tudo
 
 // ============================================================================
 // CONSTANTES DE CONTROLE
