@@ -10,8 +10,6 @@
 .DS_Store
 
 # ESP-IDF
-sdkconfig.old
-sdkconfig
 
 # Python
 __pycache__/
