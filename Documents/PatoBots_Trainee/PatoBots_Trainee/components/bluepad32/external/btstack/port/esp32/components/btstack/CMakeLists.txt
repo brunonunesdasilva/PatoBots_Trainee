@@ -1,0 +1,87 @@
+# Needed to include the lwIP's HTTP app, which is not included by default.
+set(IDF_PATH $ENV{IDF_PATH})
+get_filename_component(BTSTACK_ROOT 
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../../" 
+    ABSOLUTE)
+
+if (CMAKE_HOST_WIN32)
+    string(REPLACE "\\" "/" IDF_PATH $ENV{IDF_PATH})
+endif()
+
+set(include_dirs
+	"${CMAKE_CURRENT_SOURCE_DIR}"
+    "${BTSTACK_ROOT}/3rd-party/hxcmod-player"
+    "${BTSTACK_ROOT}/3rd-party/hxcmod-player/mods"
+    "${BTSTACK_ROOT}/3rd-party/lc3-google/include"
+    "${BTSTACK_ROOT}/3rd-party/lwip/dhcp-server"
+    "${BTSTACK_ROOT}/3rd-party/md5"
+    "${BTSTACK_ROOT}/3rd-party/yxml"
+    "${BTSTACK_ROOT}/src/classic"
+    "${BTSTACK_ROOT}/src/ble/gatt-service"
+    "${BTSTACK_ROOT}/src/ble"
+    "${BTSTACK_ROOT}/src"
+    "${BTSTACK_ROOT}/platform/embedded"
+    "${BTSTACK_ROOT}/platform/freertos"
+    "${BTSTACK_ROOT}/platform/lwip"
+    "${IDF_PATH}/components/lwip/lwip/src/include")
+
+set(src_dirs
+    "${BTSTACK_ROOT}/3rd-party/hxcmod-player"
+    "${BTSTACK_ROOT}/3rd-party/hxcmod-player/mods"
+    "${BTSTACK_ROOT}/3rd-party/lwip/dhcp-server"
+    "${BTSTACK_ROOT}/3rd-party/md5"
+    "${BTSTACK_ROOT}/3rd-party/micro-ecc"
+    "${BTSTACK_ROOT}/3rd-party/yxml"
+    "${BTSTACK_ROOT}/src/ble/gatt-service"
+    "${BTSTACK_ROOT}/src/ble"
+    "${BTSTACK_ROOT}/src/"
+    "${BTSTACK_ROOT}/platform/freertos"
+    "${BTSTACK_ROOT}/platform/lwip"
+    "${IDF_PATH}/components/lwip/lwip/src/apps/http"
+    "${CMAKE_CURRENT_SOURCE_DIR}")
+
+if(${CONFIG_BTSTACK_AUDIO})
+    if("${IDF_VERSION_MAJOR}.${IDF_VERSION_MINOR}" VERSION_GREATER_EQUAL "5.0")
+        set(exclude_srcs "btstack_audio_esp32_v4.c")
+    else()
+        set(exclude_srcs "btstack_audio_esp32_v5.c")
+    endif()
+else()
+    set(exclude_srcs "${BTSTACK_ROOT}/src/btstack_sample_rate_compensation.c"
+    "${BTSTACK_ROOT}/src/classic/btstack_sbc_bluedroid.c"
+    "${BTSTACK_ROOT}/src/classic/btstack_sbc_encoder_bluedroid.c"
+    "${BTSTACK_ROOT}/src/classic/btstack_sbc_decoder_bluedroid.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/btstack_audio_esp32_v5.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/btstack_audio_esp32_v4.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/btstack_stdio_esp32.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/es8388.c")
+endif()
+
+if(CONFIG_IDF_TARGET_ESP32)
+    list(APPEND src_dirs
+        "${BTSTACK_ROOT}/src/classic"
+        "${BTSTACK_ROOT}/3rd-party/bluedroid/decoder/srce"
+        "${BTSTACK_ROOT}/3rd-party/bluedroid/encoder/srce")
+    list(APPEND include_dirs
+        "${BTSTACK_ROOT}/3rd-party/bluedroid/decoder/include"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include"
+        "${BTSTACK_ROOT}/3rd-party/bluedroid/encoder/include")
+endif()
+
+set(priv_include_dirs
+        "${BTSTACK_ROOT}/3rd-party/micro-ecc"
+        )
+
+set(priv_requires
+        "nvs_flash"
+        "bt"
+        "driver"
+        "lwip"
+        "vfs"
+        )
+
+idf_component_register(SRC_DIRS "${src_dirs}"
+                    EXCLUDE_SRCS "${exclude_srcs}"
+                    INCLUDE_DIRS "${include_dirs}"
+                    PRIV_INCLUDE_DIRS "${priv_include_dirs}"
+                    PRIV_REQUIRES ${priv_requires})
